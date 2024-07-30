@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  {{>navbar}}
+  <main>
+    <section class="hero">
+      <h1>Welcome to MyApp</h1>
+      <p>Your journey to excellence starts here.</p>
+      <a href="#" class="cta-button">Get Started</a>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <h2>Feature 1</h2>
+        <p>Description of feature 1.</p>
+      </div>
+      <div class="feature">
+        <h2>Feature 2</h2>
+        <p>Description of feature 2.</p>
+      </div>
+      <div class="feature">
+        <h2>Feature 3</h2>
+        <p>Description of feature 3.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 MyApp. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const burger = document.querySelector('.burger');
+      const navLinks = document.querySelector('.nav-links');
+
+      burger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
